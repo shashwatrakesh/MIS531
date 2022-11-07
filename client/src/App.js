@@ -23,7 +23,7 @@ function App() {
 
 
   const listEmployees= () => {
-    Axios.get("http://localhost:3001/employees").then((res)=> {
+    Axios.get("http://localhost:3001/courses").then((res)=> {
       console.log(res)
       setEmployeeList(res.data)
     })
@@ -76,10 +76,10 @@ function App() {
     <hr />
 
     <div className="employeesListButton">
-    <button onClick={listEmployees}>List Employees</button>
+    <button onClick={listEmployees}>List courses </button>
     </div>
 
-    <div>
+    {/* <div>
         {employeeList.map((employee, key) => {
           return (
             <div className="pd10">
@@ -91,7 +91,7 @@ function App() {
             </div>
           )
         })}
-    </div>
+    </div> */}
     </div>
     
   );
