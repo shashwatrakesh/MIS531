@@ -21,3 +21,16 @@ BEGIN
        :new.eventid := v_eventid;
 END;
 /
+
+CREATE OR REPLACE TRIGGER order_ID_generation
+BEFORE INSERT
+  ON ORDERS
+  FOR EACH ROW
+DECLARE
+  temp_orderID ORDERS.ORDERID%type;
+BEGIN
+  SELECT LPAD(to_char(orders_seq.nextval),4,'O') INTO temp_orderID FROM
+dual;
+:new.ORDERID := temp_orderID;
+END;
+/
