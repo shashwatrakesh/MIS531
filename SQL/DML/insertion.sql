@@ -7,3 +7,5 @@ INSERT INTO BOOKSTORE VALUES('S108');
 -- For restaurants table:
 -- Price ranges: Inexpensive, Moderately expensive, Expensive, Very Expensive 
 INSERT INTO RESTAURANTS VALUES('S110', 'Indian', 'Moderately expensive');
+
+INSERT INTO ORDERS VALUES('O109',to_char(sysdate,'DD-MON-YYYY'),to_char(sysdate,'HH24:MI:SS'), 'cash');
