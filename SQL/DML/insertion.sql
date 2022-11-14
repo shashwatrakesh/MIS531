@@ -5,4 +5,5 @@ INSERT INTO STORES VALUES(101,'Test Store 2','10 AM TO 7PM',1,2000,'SUMC');
 INSERT INTO BOOKSTORE VALUES('S108');
 
 -- For restaurants table:
+-- Price ranges: Inexpensive, Moderately expensive, Expensive, Very Expensive 
 INSERT INTO RESTAURANTS VALUES('S110', 'Indian', 'Moderately expensive');
