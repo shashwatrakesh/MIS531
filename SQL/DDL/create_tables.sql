@@ -7,6 +7,19 @@ CREATE TABLE STORES (
  slocation varchar2(10)
 );
 
+CREATE TABLE BOOKSTORE (
+storeid char(5) NOT NULL, 
+    constraint bookstore_stores_fk FOREIGN KEY (storeid) REFERENCES STORES (storeid)
+);
+
+
+CREATE TABLE RESTAURANTS (
+storeID char(5) NOT NULL, 
+cuisine varchar2(40),
+priceRange varchar2(40),
+    constraint restaurant_stores_fk FOREIGN KEY (storeID) REFERENCES STORES (storeid)
+);
+
 
 CREATE TABLE DEPARTMENTS  (
  depid char(5) constraint detp_pk PRIMARY KEY,
