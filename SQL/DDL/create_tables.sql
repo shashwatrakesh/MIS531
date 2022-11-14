@@ -10,17 +10,17 @@ CREATE TABLE STORES (
 
 CREATE TABLE DEPARTMENTS  (
  depid char(5) constraint detp_pk PRIMARY KEY,
- deptcontact varchar2(15),
- dlocation varchar2(15),
- depname varchar2(5),
- hod varchar2(15)
+ deptcontact varchar2(50),
+ dlocation varchar2(50),
+ depname varchar2(50),
+ hod varchar2(205)
 );
 
 CREATE TABLE EVENTS  (
  eventid char(5) constraint event_pk PRIMARY KEY,
- elocation varchar2(40),
- eventName varchar2(15),
- etime varchar2(5),
+ elocation varchar2(50),
+ eventName varchar2(50),
+ etime varchar2(20),
  edate DATE,
  depid char(5),
  constraint depid_fk foreign key (depid) references DEPARTMENTS
