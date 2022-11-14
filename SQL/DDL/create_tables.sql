@@ -38,3 +38,11 @@ CREATE TABLE EVENTS  (
  depid char(5),
  constraint depid_fk foreign key (depid) references DEPARTMENTS
 );
+
+--For orders
+CREATE TABLE ORDERS (
+ orderID char(5) constraint orders_pk PRIMARY KEY,
+ orderDate varchar(40),
+ orderTime varchar2(40),
+ paymentMethod varchar2(20)
+);
