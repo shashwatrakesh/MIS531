@@ -8,7 +8,7 @@ CREATE TABLE STORES (
 );
 
 
-CREATE TABLE DEPATMENTS  (
+CREATE TABLE DEPARTMENTS  (
  depid char(5) constraint detp_pk PRIMARY KEY,
  deptcontact varchar2(15),
  dlocation varchar2(15),
@@ -23,5 +23,5 @@ CREATE TABLE EVENTS  (
  etime varchar2(5),
  edate DATE,
  depid char(5),
- constraint depid_fk foreign key (depid) references DEPATMENTS
+ constraint depid_fk foreign key (depid) references DEPARTMENTS
 );
