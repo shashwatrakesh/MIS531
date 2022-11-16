@@ -15,3 +15,25 @@ INSERT INTO DEPARTMENTS VALUES ('1001','contactCS@eller.arizona.edu','1040 4th S
 
 -- For orders table:
 INSERT INTO ORDERS VALUES('O109',to_char(sysdate,'DD-MON-YYYY'),to_char(sysdate,'HH24:MI:SS'), 'cash');
+
+-- For waste table:
+INSERT into WASTE VALUES(101, 'LeftRice', 1, 'FoodHazard', 'Food');
+
+-- For WAREHOUSE table:
+INSERT into WAREHOUSE VALUES(101, 'Speedway', 'Downtown');
+
+
+-- For TRAINING table:
+INSERT into TRAINING VALUES(101, '30minutes', 'HRTraining', 'Paul John', 'online');
+
+-- For ThirdPartyApps table:
+INSERT into ThirdPartyApps VALUES(101, 'DoorDash', '5');
+
+-- For ThirdPartyDeliveryMode table:
+INSERT into ThirdPartyDeliveryMode VALUES(101, 'HomeDelivery');
+
+
+
+
+
+
