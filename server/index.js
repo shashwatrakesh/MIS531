@@ -43,6 +43,14 @@ app.get("/courses", async(req, res) => {
   res.send(result)
 });
 
+app.get("/stores", async(req, res) => {
+  console.log('inside')
+  const result =  await (await oracledbconnection).execute (
+    'select * from stores'
+  );
+  res.send(result)
+});
+
 app.listen(3001, () => {
   console.log("Started on port 3001");
 });
